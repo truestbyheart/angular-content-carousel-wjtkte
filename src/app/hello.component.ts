@@ -66,7 +66,17 @@ export class HelloComponent implements AfterViewInit {
 
   
   @ViewChild("carousel") private carousel: ElementRef;
-  @ViewChild("item") private contentItem: ElementRef;
+  @ViewChild("item") pimport {
+  animate,
+  AnimationBuilder,
+  AnimationFactory,
+  AnimationPlayer,
+  style
+} from "@angular/animations";
+import {
+  AfterViewInit,
+  Component,
+…rivate contentItem: ElementRef;
 
   constructor(private builder: AnimationBuilder) {}
 
