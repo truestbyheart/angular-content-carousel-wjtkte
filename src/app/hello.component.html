@@ -1,0 +1,47 @@
+<div class="carousel">
+  <button
+    type="button"
+    class="carousel-left"
+    (click)="prev()"
+    [disabled]="allowPrev"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.5309 10.7138L16.8658 19.7048C17.5826 20.0984 18.7439 20.0984 19.4624 19.7048C20.1792 19.3111 20.1792 18.6717 19.4624 18.2781L4.42318 10.0005L19.4606 1.72293C20.1774 1.32928 20.1774 0.689887 19.4606 0.295239C18.7438 -0.0984129 17.5808 -0.0984129 16.864 0.295239L0.529089 9.28611C-0.176665 9.67569 -0.176664 10.3251 0.5309 10.7138Z"
+        fill="#58AF9B"
+      />
+    </svg>
+  </button>
+  <div class="carousel-container">
+    <div class="carousel-container__item" #carousel>
+      <div *ngFor="let item of items" class="item-list">
+        <ng-container [ngTemplateOutlet]="item.tpl" #contentItem></ng-container>
+      </div>
+    </div>
+  </div>
+  <button
+    type="button"
+    class="carousel-right"
+    (click)="next()"
+    [disabled]="allowNext"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19.469 9.2862L3.13417 0.295239C2.41741 -0.0984129 1.25614 -0.0984129 0.537571 0.295239C-0.17919 0.688891 -0.17919 1.32828 0.537571 1.72194L15.5767 9.9995L0.539381 18.2771C-0.17738 18.6707 -0.17738 19.3101 0.539381 19.7048C1.25614 20.0984 2.41922 20.0984 3.13598 19.7048L19.4708 10.7138C20.1767 10.3242 20.1767 9.67478 19.469 9.2862Z"
+        fill="#58AF9B"
+      />
+    </svg>
+  </button>
+</div>

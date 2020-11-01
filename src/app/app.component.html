@@ -1,0 +1,9 @@
+<hello>
+  <ng-container *ngFor="let item of items; let i=index">
+    <ng-container *carouselItem>
+      <ng-container>
+        <div class="item" (click)="itemHandler(i)">{{item.name}}</div> 
+      </ng-container>
+    </ng-container>
+  </ng-container>
+</hello>

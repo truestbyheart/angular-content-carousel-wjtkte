@@ -1,0 +1,11 @@
+/* Add application styles & imports to this file! */
+.item {
+  width: 200px;
+  height: 60px;
+  margin-left: 12px;
+  margin-top: 18px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #58af9b;
+  background-color: #fff;
+}
